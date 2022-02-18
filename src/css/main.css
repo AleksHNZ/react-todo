@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+#preload-cookies {
+  background: url(../img/desk-lg-no-cookies.jpg) no-repeat -9999px -9999px;
+  visibility: hidden;
+}
+#preload-cookies-mobile {
+  background: url(../img/desk-sm-no-cookies.jpg) no-repeat -9999px -9999px;
+  visibility: hidden;
+}
+
+.main-bg.cookies {
+  background-image: url("../img/desk-lg-cookies.jpg");
+}
+.main-bg.no-cookies {
+  background-image: url("../img/desk-lg-no-cookies.jpg");
+}
+.main-bg {
+  /* background-image: url("../img/desk-lg.jpg"); */
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: black;
+  padding-top: 80px;
+}
+
+.paper-container {
+  transform: rotate(3deg);
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: 7%;
+  box-shadow: 2px 2px 20px black;
+}
+
+.paper-container .paper-left-section {
+  border-right: red 1px solid;
+  height: 98%;
+  margin-top: 1%;
+}
+
+.paper-container .paper-title {
+  font-family: "Rock Salt", cursive;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.paper-container .paper-title h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.paper-container .paper-title h2 {
+  font-size: 0.9rem;
+}
+
+.item-box {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  margin-left: -50px;
+  padding-left: 60px;
+  border-bottom: rgb(129, 201, 250) solid 1px;
+}
+.item-text,
+.item-box-edit {
+  display: inline-block;
+  width: 90%;
+}
+.item-text {
+  margin-left: 25px;
+}
+.item-box .checkmark {
+  color: rgb(228, 227, 227);
+  display: inline-block;
+  margin-left: -50px;
+  font-size: 13px;
+}
+
+.item-box .checkmark.complete {
+  color: black;
+}
+.item-box .checkmark:hover {
+  color: rgb(155, 155, 155);
+  display: inline-block;
+  margin-left: -50px;
+  transition: 0.4s;
+}
+.item-text.done {
+  text-decoration: line-through;
+}
+input {
+  background: none;
+  height: 96%;
+}
+.item-box-blank.initial input {
+  margin-left: -15px;
+  width: 100%;
+  border: none;
+}
+.item-box-blank.initial input:focus {
+  margin-left: -15px;
+  width: 100%;
+  border: none;
+  outline: none !important;
+  border-bottom: 1px solid red;
+  box-shadow: none;
+}
+.item-box-edit input {
+  margin-left: 25px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid red;
+  box-shadow: none;
+}
+.item-box-edit input:focus {
+  outline: none !important;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+  color: rgb(226, 226, 226);
+  transition: 0.3s;
+}
+.btn-delete:hover {
+  color: red;
+}
+
+.sticky-note {
+  transition: 0.35s;
+  z-index: 1;
+  position: absolute;
+  right: 45%;
+  top: 400px;
+  background-image: url("../img/sticky-note.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  transform: rotate(-4deg);
+}
+
+.sticky-note .row {
+  font-family: "Caveat", cursive;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 26%;
+  margin-left: 25px;
+}
+
+.sticky-note .col p {
+  font-weight: 900;
+}
+
+.sticky-note .row .col {
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+.sticky-note .row .col-8 {
+  padding: 0px;
+}
+
+.sticky-note .row p {
+  margin-bottom: 0;
+}
